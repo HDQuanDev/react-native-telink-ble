@@ -17,6 +17,10 @@
 
 - (NSString*)hexadecimalString;
 
+#pragma mark - Array Conversion
+
+- (NSArray*)toArray;
+
 @end
 
 #endif /* NSData_Conversion_h */

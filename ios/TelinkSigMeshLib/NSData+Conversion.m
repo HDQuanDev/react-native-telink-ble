@@ -35,4 +35,25 @@
     return [NSString stringWithString:hexString];
 }
 
+#pragma mark - Array Conversion
+- (NSArray *)toArray
+{
+    /* Converts NSData to NSArray of NSNumber objects representing each byte */
+    
+    const unsigned char *dataBuffer = (const unsigned char *)[self bytes];
+    
+    if (!dataBuffer)
+        return [NSArray array];
+    
+    NSUInteger dataLength = [self length];
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:dataLength];
+    
+    for (int i = 0; i < dataLength; ++i)
+    {
+        [array addObject:[NSNumber numberWithUnsignedChar:dataBuffer[i]]];
+    }
+    
+    return [NSArray arrayWithArray:array];
+}
+
 @end
