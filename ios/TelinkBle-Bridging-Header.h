@@ -1,7 +1,7 @@
 #import <React/RCTBridgeModule.h>
 #import <React/RCTViewManager.h>
 
-#import "NSData+Conversion.h"
+#import "TelinkSigMeshLib/NSData+Conversion.h"
 #import "NSString+extension.h"
 
 #import "TelinkBle.h"

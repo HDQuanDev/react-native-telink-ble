@@ -9,7 +9,7 @@
 #import "TelinkBle.h"
 #import "DemoCommand.h"
 #import "NSString+extension.h"
-#import "NSData+Conversion.h"
+#import "TelinkSigMeshLib/NSData+Conversion.h"
 #import "SigDataSource.h"
 
 @implementation TelinkBle
