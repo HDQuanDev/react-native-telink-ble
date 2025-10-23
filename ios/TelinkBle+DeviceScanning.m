@@ -30,7 +30,7 @@ NSString* currentCommand = nil;
 UInt16 currentProvisionAddressOther;
 AddDeviceStateModel *model;
 
-- (void)startAddingAllDevices
+RCT_EXPORT_METHOD(startAddingAllDevices)
 {
     __weak typeof(self) weakSelf = self;
     [SigBearer.share stopMeshConnectWithComplete:^(BOOL successful) {

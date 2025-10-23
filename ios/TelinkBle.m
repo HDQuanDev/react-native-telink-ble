@@ -17,37 +17,9 @@
 
 RCT_EXPORT_MODULE(TelinkBle)
 
-RCT_EXTERN_METHOD(getNodes:(RCTPromiseResolveBlock _Nonnull)resolve withRejecter:(RCTPromiseRejectBlock _Nonnull)reject)
+// Methods implemented in category files (TelinkBle+*.m) are exported there directly with RCT_EXPORT_METHOD
+// No need for RCT_EXTERN_METHOD declarations here for Objective-C category implementations
 
-RCT_EXTERN_METHOD(sendRawString:(nonnull NSString*)command)
-
-RCT_EXTERN_METHOD(stopScanning)
-
-RCT_EXTERN_METHOD(autoConnect)
-
-RCT_EXTERN_METHOD(setStatus:(nonnull NSNumber*)meshAddress withStatus:(nonnull NSNumber*)status)
-
-RCT_EXTERN_METHOD(setBrightness:(nonnull NSNumber*)meshAddress withBrightness:(nonnull NSNumber*)brightness)
-
-RCT_EXTERN_METHOD(setTemperature:(nonnull NSNumber*)meshAddress withTemperature:(nonnull NSNumber*)temperature)
-
-RCT_EXTERN_METHOD(setHSL:(nonnull NSNumber*)meshAddress withHSL:(nonnull NSDictionary*)hsl)
-
-RCT_EXTERN_METHOD(addDeviceToGroup:(nonnull NSNumber*)deviceAddress withGroupAddress:(nonnull NSNumber*)groupAddress)
-
-RCT_EXTERN_METHOD(removeDeviceFromGroup:(nonnull NSNumber*)deviceAddress withGroupAddress:(nonnull NSNumber*)groupAddress)
-
-RCT_EXTERN_METHOD(resetNode:(nonnull NSNumber*)deviceAddress);
-
-RCT_EXTERN_METHOD(recallScene:(nonnull NSNumber*)sceneAddress);
-
-RCT_EXTERN_METHOD(setDelegateForIOS)
-
-RCT_EXTERN_METHOD(getOnlineState)
-
-RCT_EXTERN_METHOD(startAddingAllDevices)
-
-RCT_EXTERN_METHOD(openBluetoothSubSetting)
 
 RCT_EXPORT_METHOD(getMeshNetwork:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)

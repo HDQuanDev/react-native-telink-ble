@@ -134,11 +134,11 @@ RCT_EXPORT_METHOD(getNodes:(RCTPromiseResolveBlock)resolve withRejecter:(RCTProm
     for (SigNodeModel *node in curNodes) {
         [result addObject:@{
             @"name": node.name ?: @"",
-            @"uuid": node.uuid ?: @"",
+            @"uuid": node.UUID ?: @"",
             @"macAddress": node.macAddress ?: @"",
             @"meshAddress": @(node.address),
             @"deviceKey": node.deviceKey ?: @"",
-            @"hasHSL": @(node.hslAddresses.count > 0),
+            @"hasHSL": @(node.HSLAddresses.count > 0),
             @"hasLightness": @(node.temperatureAddresses.count > 0)
         }];
     }
