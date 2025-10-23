@@ -7,6 +7,7 @@
 #import <UIKit/UIImage.h>
 #import <React/RCTBridgeModule.h>
 #import "TelinkBle.h"
+#import "TelinkBle+Swift.h"
 #import "DemoCommand.h"
 #import "NSString+extension.h"
 #import "TelinkSigMeshLib/NSData+Conversion.h"
