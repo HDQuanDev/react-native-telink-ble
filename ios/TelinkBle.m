@@ -1,4 +1,9 @@
+#if __has_include(<TelinkSigMeshLib/TelinkSigMeshLib.h>)
 #import <TelinkSigMeshLib/TelinkSigMeshLib.h>
+#else
+#import "TelinkSigMeshLib/TelinkSigMeshLib.h"
+#endif
+
 #import <UIKit/UIImage.h>
 #import <React/RCTBridgeModule.h>
 #import "TelinkBle.h"

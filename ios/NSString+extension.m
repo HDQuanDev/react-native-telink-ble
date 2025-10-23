@@ -27,7 +27,12 @@
 //  Copyright © 2018年 Telink. All rights reserved.
 //
 
+#if __has_include(<TelinkSigMeshLib/TelinkSigMeshLib.h>)
 #import <TelinkSigMeshLib/TelinkSigMeshLib.h>
+#else
+#import "TelinkSigMeshLib/TelinkSigMeshLib.h"
+#endif
+
 #import "NSString+extension.h"
 
 @implementation NSString (extension)

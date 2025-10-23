@@ -12,7 +12,12 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTBridgeModule.h>
 #import <React/RCTEventEmitter.h>
+
+#if __has_include(<TelinkSigMeshLib/TelinkSigMeshLib.h>)
 #import <TelinkSigMeshLib/TelinkSigMeshLib.h>
+#else
+#import "TelinkSigMeshLib/TelinkSigMeshLib.h"
+#endif
 
 #define EVENT_MESH_NETWORK_CONNECTION       @"EVENT_MESH_NETWORK_CONNECTION"
 #define EVENT_DEVICE_FOUND                  @"EVENT_DEVICE_FOUND"
